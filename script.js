@@ -1,18 +1,41 @@
 // Listas de imágenes
 const listaCabezas = [
-  "../base-bestiario/assets/img/cabeza1.jpg",
-  "../base-bestiario/assets/img/cabeza2.jpg",
-  "../base-bestiario/assets/img/cabeza3.png",
-];
+  <p>
+     Nos encontramos sin vernos,
+        Te extraña todo lo que no existe sin tu cuerpo,
+        Líneas azules de contrabando,
+        Tratan de formar tu rostro,
+        Voy a ser un elemento,
+        Un simple carnaval de ideas,
+        Gritarte un montón de estrellas,
+        Quiero dejarte entera, 
+   
+  </p>
+ ];
 const listaTroncos = [
- "../base-bestiario/assets/img/tronco1.jpg",
-  "../base-bestiario/assets/img/tronco2.jpg",
-  "../base-bestiario/assets/img/tronco3.jpg",
+   <p>
+cantarte espacios,
+transvestir tu nombre,
+hasta que se vuelva nuevo,
+el movimiento de nuestras almas,
+por nuestros cuerpos,
+quiero venderle algo de ti a la noche,
+las intimidades,
+me canse de imitar tu alma,
+grietas tímidas te esperan,
+    
+   
+  </p>
 ];
 const listaPatas = [
-  "../base-bestiario/assets/img/patas1.jpg",
-  "../base-bestiario/assets/img/patas2.jpg",
-  "../base-bestiario/assets/img/patas3.png",
+  <p>
+que ya no saben que hacer conmigo.
+al sueño mas ambiguo.
+y al mundo donde te perteneces.
+en un trozo de papel.
+y la noche se desnude junto a tu cuerpo.
+para que vuelvas a brillar.
+</p>
 ];
 
 // Obtenemos los contenedores de las imágenes del HTML usando los IDs
@@ -38,9 +61,9 @@ function generarBestia() {
   patasAleatorio = numeroAleatorio(0, listaPatas.length);
 
   // Asignamos la nueva fuente (source) a cada imagen
-  cabeza.src = `${listaCabezas[cabezaAleatorio]}`; //ruta + listaCabezas[cabezaAleatorio];
-  tronco.src = `${listaTroncos[troncoAleatorio]}`;
-  patas.src = `${listaPatas[patasAleatorio]}`;
+  cabeza.innerText =listaCabezas[cabezaAleatorio]; //ruta + listaCabezas[cabezaAleatorio]; //cabeza.innerText = listaCabezas[cabezaAleatorio];
+  tronco.innerText =listaTroncos[troncoAleatorio];
+  patas.innerText = listaPatas[patasAleatorio];
 
   console.log(cabezaAleatorio, troncoAleatorio, patasAleatorio);
 }
