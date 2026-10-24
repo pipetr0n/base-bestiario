@@ -5,25 +5,33 @@ html {
   
    box-sizing: border-box;
   height: 100%;
-  background-color: #ebeaec;
+  background-color: #050009;
+    font-family: "Lacquer", system-ui;
+  font-weight: 500;
+  font-style: normal;
 }
 
+ 
 
 pre {
-  font-family: "Over the Rainbow", cursive;
-  font-weight: 600;
+ color:azure;
+  font-family: "Lacquer", system-ui;
+  font-weight: 500;
   font-style: normal;
-  color: rgb(255, 255, 255);
- 
 }
+
+ 
+
 
 body {
 
-  margin: 300px;
-  padding: 80px;
+  margin: 250px;
+  padding: 70px;
 
   border: 15px solid #000000;
-  background-color: #3428dc;
+  background-color: #ffdda9;
+
+   background-image: url(fondo.gif)
 
 }
 
@@ -79,4 +87,7 @@ a, a:active, a:visited, a:hover {
   background-color:  rgb(0, 0, 0);
   color: white;
   cursor: pointer;
+    font-family: "Lacquer", system-ui;
+  font-weight: 500;
+  font-style: normal;
 }
